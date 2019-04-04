@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300,400,500" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100i,200,200i,300,300i,400');
+
+@import url('https://fonts.googleapis.com/css?family=Exo:200,300,400,500');
+
+.input { grid-area: input;}
+.item1 { grid-area: one; }
+.item2 { grid-area: two; }
+.item3 { grid-area: three; }
+.item4 { grid-area: four; }
+.item5 { grid-area: five; }
+.item6 { grid-area: six;}
+.item7 { grid-area: seven; }
+.item8 { grid-area: eight; }
+.item9 { grid-area: nine; }
+.item10 { grid-area: ten; }
+.item11 { grid-area: eleven;}
+.item12 { grid-area: twelve; }
+.item13 { grid-area: thirteen; }
+.item14 { grid-area: fourteen; }
+.item15 { grid-area: fifteen; }
+.item16 { grid-area: sixteen; }
+.item17 { grid-area: seventeen; }
+.item18 { grid-area: eighteen; }
+.item19 { grid-area: nineteen; }
+.item20 { grid-area: twenty; }
+.item21 { grid-area: twentyone; }
+.item22 { grid-area: clear; }
+.item23 { grid-area: clearall; }
+.brackopen { grid-area: brackopen; }
+.brackclose { grid-area: brackclose; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  	'input input input input input'
+    'seven eight nine twelve seventeen'
+    'four five six thirteen eighteen'
+    'one two three fourteen nineteen'
+    'ten clear eleven fifteen twenty'
+    'sixteen clearall brackopen brackclose twentyone';
+  grid-gap: 10px;
+  background-color: #111;
+  padding: 15px 15px 20px 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-radius:6px;
+}
+
+.grid-container  div {
+  background-color: #5b5b5b;
+  display: inline-block;
+  padding: 8.5px;
+  font-family: ;
+  border-radius: 30px;
+  font-family: Fira sans;
+  font-size: 35px;
+  color:#f7f7f7;
+  user-select: none;
+  font-weight:100;
+  display: flex;
+  justify-content: center;
+  aign-items: center;
+}
+
+.grid-container .sign{
+background-color:#f89312;
+}
+
+.grid-container .sign:active{
+background-color:#e58609;
+}
+
+.grid-container .af{
+background-color: #444444;
+font-size:26px;
+font-weight:100;
+padding-top:12px;
+padding-left:12px;
+}
+
+.grid-container .input{
+border-radius: 0px;
+margin-bottom:20px;
+background-color:black;
+display:block;
+text-align:right;
+height:60px;
+}
+
+.grid-container div:not(.input):active{
+background-color:#545454;
+}
+
+body{
+background-color: #f7f7f7;
+}
+
+*{
+box-sizing:border-box;
+}
+
+sup{font-size:15px;}
+
+.grid-container .item21{
+font-family: Roboto;
+font-size: 30px;
+}
+
+.wrapper{
+display:flex;
+justify-content:center;
+align-items:center;
+position:absolute;
+top:20%;
+left:40%;
+}
+
+</style>
+</head>
+<body>
