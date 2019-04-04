@@ -153,3 +153,66 @@ left:40%;
   </div>
 </div>
 </body>
+<script>
+var input;
+
+var container = document.getElementById('container');
+
+for (let i = 1 ; i < container.children.length; i++){
+
+	container.children[i].onclick = function () {
+	let button = container.children[i].textContent;
+        switch (button) {
+    case '−': button = '-';
+    break;
+
+    case '×': button = '*';
+    break;
+
+    case '÷': button = '/';
+    break;
+
+    case 'xy': button = 'Math.pow(';
+    break;
+
+    case 'sin': button = 'Math.sin(';
+    break;
+
+    case 'cos': button = 'Math.cos(';
+    break;
+
+    case '√': button = 'Math.sqrt(';
+    break;
+
+      case 'CA': button='';
+    document.getElementById('input').innerHTML='';
+    break;
+
+    case 'C': button='';
+    let tmp = document.getElementById('input').textContent;
+    tmp = tmp.substring(0, tmp.length - 1);
+	document.getElementById('input').textContent = tmp;
+     break;
+    }
+
+
+
+
+	if(button != '='){
+	document.getElementById('input').textContent += button;}
+	else{
+	input = document.getElementById('input').textContent;
+	calc(input);
+	}
+}
+}
+
+function calc(input) {
+	let result;
+	result = eval(input);
+	document.getElementById('input').innerHTML= result;
+}
+
+</script>
+
+</html>
